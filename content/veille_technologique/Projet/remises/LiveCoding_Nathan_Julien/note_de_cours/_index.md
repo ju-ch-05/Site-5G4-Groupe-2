@@ -4,9 +4,21 @@ weight = 2
 +++
 
 ## Définition du live coding
+
 Le live coding est un concept de programmation qui consiste à écrire du code qui sera exécuter en temps réel. Le live coding est souvent vu comme étant une prestation musicale ou graphique auquel un public peut assister.
 
 Le live coding est un art qui est improvisé. En effet, les performeurs vont créer leur arts en direct en n'ayant rien préparé d'avance. C'est d'ailleurs ce qui est recherché par le public, car cela permet de suivre le processus de création des artistes, notamment lorsqu'ils expérimentent et font des essais-erreurs en direct.
+
+## Différentes techniques de performances
+
+### Participation du public
+
+Dans les spectacles de musique traditionnels, la participation du public semle automatique. En effet, les fans vont chanter les paroles en choeur étant-donné qu'ils connaissent les chansons. Lors des algoraves, les performances musicales de live coding, il est plus difficile de faire participer le public, car l'artiste lui-même ne sait pas ce qu'il jouera.
+
+L'article [*Live Coding the Audience Participation*](https://echolab.cs.vt.edu/wp-content/uploads/sites/105/2024/05/Lee-ICLC16-LiveCodingAudienceParticipation-s77n9n.pdf) propose un moyen pour faire parciciper le public directement dans la musique qui sera jouée. Pour ce faire, le public devra télécharger une application que l'artiste pourra, en quelque sorte contrôler. Le rôle de l'artiste serait de déterminer, par exemple : 
++ Les instruments auquels le public a accès
++ Le tempo du métronome
++ Avec le hasard, quels téléphones jouent aigu et lesquels jouent grave
 
 ## Origines
 
