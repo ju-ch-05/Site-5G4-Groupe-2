@@ -98,7 +98,7 @@ stack(
 .late("[0 .01]*4").late("[0 .01]*2").size(4)
 ```
 
-## hydra
+## Hydra
 
 Hydra est un environnement de **live coding visuel** permettant de créer des compositions graphiques génératives en temps réel directement dans le navigateur. Inspiré des synthétiseurs vidéo modulaires, Hydra repose sur des flux visuels que l’on transforme, combine et module à l’aide de fonctions simples. Chaque instruction modifie instantanément l’image affichée, ce qui en fait un outil idéal pour le VJing, la performance audiovisuelle et l’exploration créative. Accessible, basé sur JavaScript et conçu pour encourager l’expérimentation, Hydra offre une approche intuitive de la synthèse visuelle, adaptée autant aux artistes numériques qu’aux curieux souhaitant découvrir l’art génératif.
 
