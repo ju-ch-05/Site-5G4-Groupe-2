@@ -165,10 +165,20 @@ noise(9,0.3)
 ```
 ![Image Hydra](hydra4.png)
 
+[Liste complete des fonctions Hydra](https://hydra.ojack.xyz/docs/docs/reference/)
 
 ## Gibber 
+
+## Gibber 
+
+Gibber est une plateforme open-source de live coding qui permet de créer en temps réel des performances audio-visuelles directement dans un navigateur. Elle combine synthèse sonore, séquençage musical et génération graphique 2D/3D grâce à du code JavaScript exécuté instantanément. Accessible et interactive, elle offre un environnement idéal pour l’expérimentation, l’improvisation artistique et l’apprentissage de la création numérique, tout en synchronisant son et image pour produire des œuvres multimédia dynamiques.
+
+Malgré ses nombreux avantages Gibber est une plateforme assez compliqué à prendre en main a cause de sa complexité c'est pourquoi plusieurs adepte du live coding utilise encore Strudel REPL et Hydra.
+
+Voici le Depot [Github](https://github.com/gibber-cc/gibber?tab=readme-ov-file) puisqu'il faut "self-host" la plateforme.
 
 ## Sources
 - https://medium.com/@royce.taylor789/live-coding-6ac7ead9dbcf
 - https://echolab.cs.vt.edu/wp-content/uploads/sites/105/2024/05/Lee-ICLC16-LiveCodingAudienceParticipation-s77n9n.pdf
 - https://strudel.cc/workshop/getting-started/
+
