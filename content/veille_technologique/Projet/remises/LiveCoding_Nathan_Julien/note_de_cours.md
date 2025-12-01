@@ -19,6 +19,16 @@ Les grandes lignes de ce manifeste sont les suivantes :
 + Le code doit être public : Rien ne doit être caché au public.
 + Les algorithmes prévalent sur les outils utilisés.
 
+## Technologie derrière le Live Coding
+
+La technologie derrière le Live Coding est composé de plusieurs concept et technologie qui travaille ensemble pour nous donner la possibilité de faire du live coding. Pour la présentation des technologies utilisé, elle va être divisé en plusieurs plus petit volet qui chacun aborde un certain module qui compose l'intégrité du Live Conding. 
+
+### REPL
+
+Un **REPL** (Read–Eval–Print Loop) est un environnement interactif dans lequel le code est lu, exécuté, puis ses effets sont immédiatement renvoyés à l’utilisateur. En live coding, le REPL sert d’interface principale pour créer et transformer la musique ou les visuels en temps réel. L’artiste écrit ou modifie du code dans une zone d’édition, puis le REPL l’interprète instantanément : chaque changement déclenche une nouvelle exécution qui met à jour le comportement du programme sans interrompre la performance. Cela permet d’essayer des idées rapidement, d’ajuster des paramètres, de superposer des motifs, ou de réagir à l’ambiance du moment. En somme, le REPL est le cœur du processus de live coding, facilitant une boucle continue d’expérimentation, de création et de rétroaction immédiate entre le code et le résultat artistique. Strudel et Replit utilise un REPL pour leur platforme de live coding.
+
+![Diagramme REPL](diagrammeREPL.png)
+
 
 ## Comment ça fonctionne?
  Premièrement, la **transpilation** est un élément essentiels dans la plupart des technologies de live coding. Ce concept permet en réalité de traduire un langage de programmation de haut niveau veres un autre langage de haut niveau.
