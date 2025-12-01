@@ -155,13 +155,18 @@ On souhaite créer une veille technologique au sujet du live coding (musical et 
 
 ### Sources sélectionnées pour nos recherches
 
-Pour les sources que nous avons sélectionnés, nous allons principalement utilisés la documentation des outils présenté ( Strudel, Hydra et **Outil Mix à déterminer** ).
+Pour les sources que nous avons sélectionnés, nous allons principalement utilisés la documentation des outils présenté ( Strudel, Hydra et **Outil Mix à déterminer** ).Puisque les logiciels sur lesquels nous allons pousser notre recherche sont des technologies "Open Source". La documentation extensive disponible à leur sujet va sans doute être très utile à fin de comprendre ces outils d'une manière assez aprofondie.Ce qui va sans doute être nécéssaire pour rédiger des notes de cours et un ateliers à ce sujet. La page Wikipédia sur le Live Coding contient aussi plusieurs information à propos de ces outils. Cette page va surement plus nous servir à établir un contexte (utilisation et historique) pour la présentation de ces outils. Nous allons surement aussi aborder le sujet de SuperCollider qui est un peu l'ancetre commun de cette discipline.
 
 [Strudel (Audio)](https://strudel.cc/workshop/getting-started/)
 [Hydra (Graphique)](https://hydra.ojack.xyz/docs/)
 [**Outil Mix**]()
+[Wikipédia (Live Coding)](https://en.wikipedia.org/wiki/Live_coding)
+[SuperCollider](https://docs.supercollider.online/)
 
-Nous allons aussi nous inspirer des 2 créateurs sités un peu plus bas.
+
+Nous allons aussi nous inspirer des 2 créateurs sités un peu plus bas. 
+
+
 
 ### Articles sur le "Live Coding"
 
