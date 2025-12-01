@@ -9,9 +9,8 @@ Le live coding est un concept de programmation qui consiste à écrire du code q
 
 Le live coding est un art qui est improvisé. En effet, les performeurs vont créer leur arts en direct en n'ayant rien préparé d'avance. C'est d'ailleurs ce qui est recherché par le public, car cela permet de suivre le processus de création des artistes, notamment lorsqu'ils expérimentent et font des essais-erreurs en direct.
 
-## Différentes techniques de performances
 
-### Participation du public
+## Participation du public
 
 Dans les spectacles de musique traditionnels, la participation du public semle automatique. En effet, les fans vont chanter les paroles en choeur étant-donné qu'ils connaissent les chansons. Lors des algoraves, les performances musicales de live coding, il est plus difficile de faire participer le public, car l'artiste lui-même ne sait pas ce qu'il jouera.
 
@@ -65,37 +64,42 @@ Enfin, les événements sont envoyés à un **output**, généralement basé sur
 Voici un exemple de code Strudel REPL:
 
 ```
-// "coastline" @by eddyflux
-// @version 1.0
-samples('github:eddyflux/crate')
-setcps(.75)
-let chords = chord("<Bbm9 Fm9>/4").dict('ireal')
+setcps(1)
+
+// Pattern de batterie
 stack(
-  stack( // DRUMS
-    s("bd").struct("<[x*<1 2> [~@3 x]] x>"),
-    s("~ [rim, sd:<2 3>]").room("<0 .2>"),
-    n("[0 <1 3>]*<2!3 4>").s("hh"),
-    s("rd:<1!3 2>*2").mask("<0 0 1 1>/16").gain(.5)
-  ).bank('crate')
-  .mask("<[0 1] 1 1 1>/16".early(.5))
-  , // CHORDS
-  chords.offset(-1).voicing().s("gm_epiano1:1")
-  .phaser(4).room(.5)
-  , // MELODY
-  n("<0!3 1*2>").set(chords).mode("root:g2")
-  .voicing().s("gm_acoustic_bass"),
-  chords.n("[0 <4 3 <2 5>>*2](<3 5>,8)")
-  .anchor("D5").voicing()
-  .segment(4).clip(rand.range(.4,.8))
-  .room(.75).shape(.3).delay(.25)
-  .fm(sine.range(3,8).slow(8))
-  .lpf(sine.range(500,1000).slow(8)).lpq(5)
-  .rarely(ply("2")).chunk(4, fast(2))
-  .gain(perlin.range(.6, .9))
-  .mask("<0 1 1 0>/16")
+  s("bd sd bd sd"),    
+  s("hh*2 ~ hh*2 ~")
 )
-.late("[0 .01]*4").late("[0 .01]*2").size(4)
+
+// Mélodie simple avec variation de notes et d'octave
+mini("c4 e4 g4 b4").gain(0.7).pan("<0 1>")
+
+// Ajout d'un effet de filtre sur la mélodie
+mini("c4 e4 g4 b4").lpf(sine.range(400,1200).slow(8))
+
+// Superposition des deux patterns
+stack(
+  s("bd sd bd sd"),
+  mini("c4 e4 g4 b4").gain(0.7).pan("<0 1>").lpf(sine.range(400,1200).slow(8))
+)
 ```
+>1. La fonction `setcps` (CPS pour Cycles Per Second) permet de définir le tempo de la mélodie
+>2. La fonction `stack` permet de superposer plusieurs instruments dans une mélodie.
+>3. Les instruments sont représentés par des abréviations : 
+  >- `bd` : Grosse caisse (Bass Drum)
+  >- `sd` : Caisse claire (Snare Drum)
+  >- `hh` : Charley fermé (Hi-Hat)
+  >- `oh` : Charley ouvert (Open Hat)
+  >- `cp`: Clap
+>4. Caractères spéciaux : 
+  >- `\*x` : Le son sera joué x fois dans la mélodie
+  >- `~` : Un silence
+  >- `<x y>` : Alterne entre x et y à chaque exécution
+>5. La fonction mini permet d'ajouter des effets sur une mélodie avec les fonctions : 
+  >- `gain` pour gérer le volume
+  >- `pan` pour gérer dans quel position stéréo le son jouera
+  >- `lpf(x)` pour filtrer le son et couper tout ce qui est au dessus de x Hz 
 
 ## Hydra
 
