@@ -4,9 +4,21 @@ weight = 2
 +++
 
 ## Définition du live coding
+
 Le live coding est un concept de programmation qui consiste à écrire du code qui sera exécuter en temps réel. Le live coding est souvent vu comme étant une prestation musicale ou graphique auquel un public peut assister.
 
 Le live coding est un art qui est improvisé. En effet, les performeurs vont créer leur arts en direct en n'ayant rien préparé d'avance. C'est d'ailleurs ce qui est recherché par le public, car cela permet de suivre le processus de création des artistes, notamment lorsqu'ils expérimentent et font des essais-erreurs en direct.
+
+## Différentes techniques de performances
+
+### Participation du public
+
+Dans les spectacles de musique traditionnels, la participation du public semle automatique. En effet, les fans vont chanter les paroles en choeur étant-donné qu'ils connaissent les chansons. Lors des algoraves, les performances musicales de live coding, il est plus difficile de faire participer le public, car l'artiste lui-même ne sait pas ce qu'il jouera.
+
+L'article [*Live Coding the Audience Participation*](https://echolab.cs.vt.edu/wp-content/uploads/sites/105/2024/05/Lee-ICLC16-LiveCodingAudienceParticipation-s77n9n.pdf) propose un moyen pour faire parciciper le public directement dans la musique qui sera jouée. Pour ce faire, le public devra télécharger une application que l'artiste pourra, en quelque sorte contrôler. Le rôle de l'artiste serait de déterminer, par exemple : 
++ Les instruments auquels le public a accès
++ Le tempo du métronome
++ Avec le hasard, quels téléphones jouent aigu et lesquels jouent grave
 
 ## Origines
 
@@ -31,19 +43,6 @@ Un **REPL** (Read–Eval–Print Loop) est un environnement interactif dans lequ
 
 ![Diagramme REPL](diagrammeREPL.png)
 
-## Comment ça fonctionne?
-D'abord, la **transpilation** est un élément essentiels dans la plupart des technologies de live coding. Ce concept permet en réalité de traduire un langage de programmation de haut niveau veres un autre langage de haut niveau.
-Cela permet entre autre à Strudel REPL, qui utilise un librairie JavaScript pour faire créer du son, de permettre aux utilisateurs, qui sont généralement peu familiers avec les langages de programmation classiques, d'écrire du code beaucoup plus simplement. 
-
-La ligne : 
-
-``` 'c3 [e3 g3]*2'; ```
-
-est transpiler en :
-
-``` mini('c3 [e3 g3]*2').withMiniLocation([1, 0, 0], [1, 14, 14]); ``` 
-
-
 
 ## Architecture Client-Serveur
 
@@ -55,7 +54,7 @@ L’architecture *client–serveur* appliquée au live coding repose sur une sé
 
 **[Strudel](https://strudel.cc/)** est un environnement de **live coding musical** qui permet de créer et transformer des motifs sonores en temps réel directement dans le navigateur. Inspiré de Tidal Cycles mais entièrement basé sur JavaScript, il offre une manière simple et accessible d’explorer la composition algorithmique sans installation complexe ni connaissances préalables en programmation. En manipulant des « patterns » — des structures répétitives qui définissent rythmes, variations et textures — l’utilisateur peut improviser, expérimenter et construire des performances musicales vivantes. Strudel sert autant d’outil créatif pour les artistes que de plateforme d’apprentissage pour découvrir le live coding et ses possibilités expressives.
 
-Strudel fonctionne grâce à un processus de **transpilation** qui transforme le code écrit par l’utilisateur en structures internes prêtes à être jouées. Lorsqu’on écrit un motif en mini-notation comme `"c3 [e3 g3]*2"`, celui-ci est converti en appels JavaScript, avec des informations de position permettant au REPL de surligner les notes jouées en temps réel.
+Strudel fonctionne grâce à un processus de **transpilation** qui transforme le code écrit par l’utilisateur en structures internes prêtes à être jouées. Lorsqu’on écrit un motif en mini-notation comme `"c3 [e3 g3]*2"`, celui-ci est converti en appels JavaScript, avec des informations de position permettant au REPL de surligner les notes jouées en temps réel pour devenir : ``` mini('c3 [e3 g3]*2').withMiniLocation([1, 0, 0], [1, 14, 14]); ```.
 
 Le code source est d’abord analysé par **acorn** pour produire un **AST**, puis réécrit avec **escodegen** afin d’obtenir un JavaScript compréhensible par le moteur. La **mini-notation**, inspirée de Tidal, est gérée par un parseur **peggy** qui transforme les motifs en séquences Strudel (`seq`, `reify`, etc.). Chaque élément reçoit une localisation (`withLoc`) pour permettre le suivi visuel pendant l’exécution.
 
