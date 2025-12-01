@@ -100,7 +100,7 @@ stack(
   >- `gain` pour gérer le volume
   >- `pan` pour gérer dans quel position stéréo le son jouera
   >- `lpf(x)` pour filtrer le son et couper tout ce qui est au dessus de x Hz 
-  
+
 > [!info]
 >Cet exemple ne comprend que quelques options. Visitez la [documentation](https://strudel.cc/workshop/getting-started/) de strudel pour en savoir plus
 ## Hydra
@@ -167,3 +167,8 @@ noise(9,0.3)
 
 
 ## Gibber 
+
+## Sources
+- https://medium.com/@royce.taylor789/live-coding-6ac7ead9dbcf
+- https://echolab.cs.vt.edu/wp-content/uploads/sites/105/2024/05/Lee-ICLC16-LiveCodingAudienceParticipation-s77n9n.pdf
+- https://strudel.cc/workshop/getting-started/
