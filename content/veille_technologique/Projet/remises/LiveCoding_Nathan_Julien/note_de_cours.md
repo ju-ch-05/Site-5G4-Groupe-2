@@ -6,6 +6,8 @@ weight = 2
 ## Définition du live coding
 Le live coding est un concept de programmation qui consiste à écrire du code qui sera exécuter en temps réel. Le live coding est souvent vu comme étant une prestation musicale ou graphique auquel un public peut assister.
 
+Le live coding est un art qui est improvisé. En effet, les performeurs vont créer leur arts en direct en n'ayant rien préparé d'avance. C'est d'ailleurs ce qui est recherché par le public, car cela permet de suivre le processus de création des artistes, notamment lorsqu'ils expérimentent et font des essais-erreurs en direct.
+
 ## Origines
 
 Le live coding est s'est développé dans les années 2000 où il permettait de rassembler des artistes dans des prestations de programmation où on créait de la musique par exemple.
@@ -38,4 +40,3 @@ Un **REPL** (Read–Eval–Print Loop) est un environnement interactif dans lequ
  ``` 'c3 [e3 g3]*2'; ```
  est transpiler en :
  ``` mini('c3 [e3 g3]*2').withMiniLocation([1, 0, 0], [1, 14, 14]); ``` 
-
