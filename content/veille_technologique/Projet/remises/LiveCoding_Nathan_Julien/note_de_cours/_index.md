@@ -110,18 +110,55 @@ Hydra offre également la possibilité d’étendre son langage visuel en créan
 
 Voici un exemple de visuel possible avec Hydra:
 
+Dans l'exemple ici, la fonction `noise(scale,offset)`est un fonction de type source et permet de créer la base d'un visuel.
+
+La fonction `out(texture)`, elle permet l'affichage de la texture.
+
 ```
-// licensed with CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
-//trying to get closer
-//by Ritchse
-//instagram.com/ritchse
- 
-osc(60,-0.015,0.3).diff(osc(60,0.08).rotate(Math.PI/2))
-	.modulateScale(noise(3.5,0.25).modulateScale(osc(15).rotate(()=>Math.sin(time/2))),0.6)
-	.color(1,0.5,0.4).contrast(1.4)
-	.add(src(o0).modulate(o0,.04),.6)
-	.invert().brightness(0.1).contrast(1.2)
-	.modulateScale(osc(2),-0.2)
-  .out()
+noise(9,0.3)
+.out()
+
 ```
-![Image Hydra](Hydra.png)
+![Image Hydra](hydra1.png)
+
+Ensuite, on peut ajouter la fonction `pixelate(pixelX,pixelY)` pour pixeliser notre texture.
+
+```
+noise(9,0.3)
+.pixelate(10.20)
+.out()
+
+```
+![Image Hydra](hydra2.png)
+
+Pour ajouter de la couleur, on peut ajouter les deux fonctions suivante:
+
+`color(r,g,b,a(optionnel))` pour établir une couleur de base.
+
+`colorama(amount)` pour établir une variation.
+
+```
+noise(9,0.3)
+.pixelate(10.20)
+.color(1,2,3,1)
+.colorama(0.3)
+.out()
+
+```
+![Image Hydra](hydra3.png)
+
+Finalement,on peut utiliser la fonction `blend(texture,amount)` pour fusionner une autre texture dans notre visuel. Dans notre cas, je vais utiliser la fonction `osc(frequence,sync, offset)`.
+
+```
+noise(9,0.3)
+.pixelate(10,20)
+.color(1,2,3,1)
+.colorama(0.3)
+.blend(osc(6,7,2),0.3)
+.out()
+
+```
+![Image Hydra](hydra4.png)
+
+
+## Gibber 
