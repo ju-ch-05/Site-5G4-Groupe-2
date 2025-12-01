@@ -168,7 +168,9 @@ Nous allons aussi nous inspirer des 2 créateurs sités un peu plus bas.
 
 
 
-### Articles sur le "Live Coding"
+### Articles sur le Live Coding
+
+Voici quelques articles sur le Live Coding
 
 [Article de Mirakl Tech Blog (2025)](https://mirakl.tech/beats-bytes-and-basslines-an-introduction-to-live-coding-with-strudel-cc-4d378e86d5b7)
 
