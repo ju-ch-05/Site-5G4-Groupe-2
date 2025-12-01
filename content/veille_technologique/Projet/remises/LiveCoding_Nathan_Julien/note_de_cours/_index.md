@@ -31,19 +31,6 @@ Un **REPL** (Read–Eval–Print Loop) est un environnement interactif dans lequ
 
 ![Diagramme REPL](diagrammeREPL.png)
 
-## Comment ça fonctionne?
-D'abord, la **transpilation** est un élément essentiels dans la plupart des technologies de live coding. Ce concept permet en réalité de traduire un langage de programmation de haut niveau veres un autre langage de haut niveau.
-Cela permet entre autre à Strudel REPL, qui utilise un librairie JavaScript pour faire créer du son, de permettre aux utilisateurs, qui sont généralement peu familiers avec les langages de programmation classiques, d'écrire du code beaucoup plus simplement. 
-
-La ligne : 
-
-``` 'c3 [e3 g3]*2'; ```
-
-est transpiler en :
-
-``` mini('c3 [e3 g3]*2').withMiniLocation([1, 0, 0], [1, 14, 14]); ``` 
-
-
 
 ## Architecture Client-Serveur
 
@@ -55,7 +42,7 @@ L’architecture *client–serveur* appliquée au live coding repose sur une sé
 
 **[Strudel](https://strudel.cc/)** est un environnement de **live coding musical** qui permet de créer et transformer des motifs sonores en temps réel directement dans le navigateur. Inspiré de Tidal Cycles mais entièrement basé sur JavaScript, il offre une manière simple et accessible d’explorer la composition algorithmique sans installation complexe ni connaissances préalables en programmation. En manipulant des « patterns » — des structures répétitives qui définissent rythmes, variations et textures — l’utilisateur peut improviser, expérimenter et construire des performances musicales vivantes. Strudel sert autant d’outil créatif pour les artistes que de plateforme d’apprentissage pour découvrir le live coding et ses possibilités expressives.
 
-Strudel fonctionne grâce à un processus de **transpilation** qui transforme le code écrit par l’utilisateur en structures internes prêtes à être jouées. Lorsqu’on écrit un motif en mini-notation comme `"c3 [e3 g3]*2"`, celui-ci est converti en appels JavaScript, avec des informations de position permettant au REPL de surligner les notes jouées en temps réel.
+Strudel fonctionne grâce à un processus de **transpilation** qui transforme le code écrit par l’utilisateur en structures internes prêtes à être jouées. Lorsqu’on écrit un motif en mini-notation comme `"c3 [e3 g3]*2"`, celui-ci est converti en appels JavaScript, avec des informations de position permettant au REPL de surligner les notes jouées en temps réel pour devenir : ``` mini('c3 [e3 g3]*2').withMiniLocation([1, 0, 0], [1, 14, 14]); ```.
 
 Le code source est d’abord analysé par **acorn** pour produire un **AST**, puis réécrit avec **escodegen** afin d’obtenir un JavaScript compréhensible par le moteur. La **mini-notation**, inspirée de Tidal, est gérée par un parseur **peggy** qui transforme les motifs en séquences Strudel (`seq`, `reify`, etc.). Chaque élément reçoit une localisation (`withLoc`) pour permettre le suivi visuel pendant l’exécution.
 
