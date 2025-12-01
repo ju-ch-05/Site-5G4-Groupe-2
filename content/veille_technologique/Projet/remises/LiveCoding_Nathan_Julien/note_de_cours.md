@@ -12,7 +12,9 @@ La technologie derrière le Live Coding est composé de plusieurs concept et tec
 
 ### REPL
 
-Un **REPL** (Read–Eval–Print Loop) est un environnement interactif dans lequel le code est lu, exécuté, puis ses effets sont immédiatement renvoyés à l’utilisateur. En live coding, le REPL sert d’interface principale pour créer et transformer la musique ou les visuels en temps réel. L’artiste écrit ou modifie du code dans une zone d’édition, puis le REPL l’interprète instantanément : chaque changement déclenche une nouvelle exécution qui met à jour le comportement du programme sans interrompre la performance. Cela permet d’essayer des idées rapidement, d’ajuster des paramètres, de superposer des motifs, ou de réagir à l’ambiance du moment. En somme, le REPL est le cœur du processus de live coding, facilitant une boucle continue d’expérimentation, de création et de rétroaction immédiate entre le code et le résultat artistique.
+Un **REPL** (Read–Eval–Print Loop) est un environnement interactif dans lequel le code est lu, exécuté, puis ses effets sont immédiatement renvoyés à l’utilisateur. En live coding, le REPL sert d’interface principale pour créer et transformer la musique ou les visuels en temps réel. L’artiste écrit ou modifie du code dans une zone d’édition, puis le REPL l’interprète instantanément : chaque changement déclenche une nouvelle exécution qui met à jour le comportement du programme sans interrompre la performance. Cela permet d’essayer des idées rapidement, d’ajuster des paramètres, de superposer des motifs, ou de réagir à l’ambiance du moment. En somme, le REPL est le cœur du processus de live coding, facilitant une boucle continue d’expérimentation, de création et de rétroaction immédiate entre le code et le résultat artistique. Strudel et Replit utilise un REPL pour leur platforme de live coding.
+
+![Diagramme REPL](diagrammeREPL.png)
 
 
 
