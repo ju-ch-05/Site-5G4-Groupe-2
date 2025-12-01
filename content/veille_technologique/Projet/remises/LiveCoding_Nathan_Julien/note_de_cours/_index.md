@@ -169,7 +169,6 @@ noise(9,0.3)
 
 ## Gibber 
 
-## Gibber 
 
 Gibber est une plateforme open-source de live coding qui permet de créer en temps réel des performances audio-visuelles directement dans un navigateur. Elle combine synthèse sonore, séquençage musical et génération graphique 2D/3D grâce à du code JavaScript exécuté instantanément. Accessible et interactive, elle offre un environnement idéal pour l’expérimentation, l’improvisation artistique et l’apprentissage de la création numérique, tout en synchronisant son et image pour produire des œuvres multimédia dynamiques.
 
