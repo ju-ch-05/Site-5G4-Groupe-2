@@ -177,7 +177,11 @@ Malgré ses nombreux avantages Gibber est une plateforme assez compliqué à pre
 Voici le Depot [Github](https://github.com/gibber-cc/gibber?tab=readme-ov-file) puisqu'il faut "self-host" la plateforme.
 
 ## Sources
-- https://medium.com/@royce.taylor789/live-coding-6ac7ead9dbcf
-- https://echolab.cs.vt.edu/wp-content/uploads/sites/105/2024/05/Lee-ICLC16-LiveCodingAudienceParticipation-s77n9n.pdf
-- https://strudel.cc/workshop/getting-started/
+- [Medium](https://medium.com/@royce.taylor789/live-coding-6ac7ead9dbcf)
+- [*Live Coding the Audience Participation*](https://echolab.cs.vt.edu/wp-content/uploads/sites/105/2024/05/Lee-ICLC16-LiveCodingAudienceParticipation-s77n9n.pdf)
+- [Gibber (Audiovisuel)](https://github.com/gibber-cc/gibber?tab=readme-ov-file)
+- [Hydra (Graphique)](https://hydra.ojack.xyz/docs/)
+- [Strudel (Audio)](https://strudel.cc/workshop/getting-started/)
+- [SuperCollider](https://docs.supercollider.online/)
+- [Wikipédia (Live Coding)](https://en.wikipedia.org/wiki/Live_coding)
 
