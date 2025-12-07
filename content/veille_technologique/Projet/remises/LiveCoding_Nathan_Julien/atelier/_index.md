@@ -1,3 +1,8 @@
++++
+title = "Atelier"
+weight = 2
++++
+
 ## Atelier Hydra - Guide des Fonctions
 
 Voici un lien vers la plateforme en ligne: [Hydra](https://hydra.ojack.xyz/)
