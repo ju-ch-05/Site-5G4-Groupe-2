@@ -77,3 +77,28 @@ Voici un exemple de la gamme du Do :
 setcps(.5)
 $: note("c4 d4 e4 f4 g4 a4 b4 c5").sound("piano")
 ```
+
+## Fonctions d'effets
+
+On peut appliquer des effets sur nos séquences dans Strudel. Voici quelques exemples : 
+- `lpf(x)` : Bloque les fréquences au dessus de x Hz.
+- `hpf(x)` : Bloque les fréquences en dessous de x Hz.
+- `vowel(x)` où x est une voyelle : Fait sonner les notes comme la voyelle x.
+- `gain(x)` : Multiplie le son de la séquence par x.
+- `delay(x)` : Créer un délai entre les éléments de la séquence.  
+
+## Projet final
+
+Pour consolider ce que vous avez appris lors de cet atelier, il est maintenant l'heure de vous entrainer. Composez une musique qui comporte : 
+- Au moins 3 patterns utilisant chacun des modificateurs de séquences dont : 
+    - Au moins deux patterns utilisant des instruments de percussion
+    - Au moins un pattern utilisant des notes avec un autre instrument au choix
+- Un CPS personnalisé
+- Des effets pour modifier des séquences
+
+Vous êtes libre d'explorer la [documentation](https://strudel.cc/workshop/getting-started/) pour enrichir votre projet. La seule limite est celle de votre imagination!
+Amusez-vous!
+
+
+## Ressources
+- [Documentation de Strudel REPL](https://strudel.cc/workshop/getting-started/)
