@@ -47,3 +47,33 @@ Maintenant, essayez de créer une séquence qui utilise tous ces modificateurs. 
 >setcps(2)
 >$: s("bd*2 [~ sd] , <hh oh>")
 >```
+
+## Notes
+
+Les instruments des exemples présentés ci-dessus étaient tous des instruments de percussions. La notion de notes de musique est alors plus abstraite. Or, dans Strudel, on peut utiliser d'autres instruments, on peut même en importer!
+
+Avant tout, les notes, dans Strudel utilise la notation anglaise. Voici un tableau pour convertir les notes françaises en notes anglaises.
+
+| Notes anglaises (Strudel) | Notes françaises |
+| --------------- | ---------------- |
+| C | Do |
+| D | Ré |
+| E | Mi |
+| F | Fa | 
+| G | Sol |
+| A | La |
+| B | Si |
+| Suffixe s | Dièse (#) |
+| Suffixe b | Bémol (b) |
+
+On peut spcifier l'octave de la note en mettant le numéro de ce dernier après la note.
+
+### Notes dans Strudel REPL
+
+Pour utiliser les notes dans Strudel, il faut tout simplement utiliser la fonction `note()`. On peut y ajouter la fonction `sound()` pour faire jouer un instrument en particulier.
+Voici un exemple de la gamme du Do :
+
+```
+setcps(.5)
+$: note("c4 d4 e4 f4 g4 a4 b4 c5").sound("piano")
+```
