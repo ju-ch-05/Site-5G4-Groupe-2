@@ -48,7 +48,7 @@ Maintenant, essayez de créer une séquence qui utilise tous ces modificateurs. 
 >$: s("bd*2 [~ sd] , <hh oh>")
 >```
 
-## Notes
+## Notes 
 
 Les instruments des exemples présentés ci-dessus étaient tous des instruments de percussions. La notion de notes de musique est alors plus abstraite. Or, dans Strudel, on peut utiliser d'autres instruments, on peut même en importer!
 
